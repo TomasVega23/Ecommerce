@@ -293,8 +293,56 @@ button {
   color: black;
 }
 
+/* Responsive */
 
 @media screen and (max-width: 992px) {
+  /* index */
+  .categoria_princ{
+    display: flex;
+    flex-direction: column;
+  }
+  .categoria_princ_titulo{
+    font-size: 30px;
+  }
+  .categoria_princ_container_catego{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container_catego-img{
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+  }
+  .section-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-izq{
+    display: none;
+  }
+  .section_der_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section_der_text-sub{
+    padding: 0 10px;
+  }
+  .container_why{
+    flex-direction: column;
+  }
+  .container_why-titulo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .container_why-card{
+    flex-direction: column;
+  }
+  .container_why-card p{
+    text-align: center;
+  }
+  /* pagina teclados */
   .contenedor_cards{
     display: flex;
     flex-direction: column;
@@ -303,5 +351,18 @@ button {
   .contenedor_cards-div{
     width: auto;
     margin: 1rem;
+  }
+  /* contactos */
+  #contact{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10rem;
+  }
+  #contact .contact_container{
+    gap: 2rem;
+  }
+  .contact_options{
+    margin: 13px;
   }
 }
