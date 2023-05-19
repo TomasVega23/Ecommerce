@@ -292,3 +292,16 @@ button {
   text-decoration: none;
   color: black;
 }
+
+
+@media screen and (max-width: 992px) {
+  .contenedor_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_cards-div{
+    width: auto;
+    margin: 1rem;
+  }
+}
