@@ -53,7 +53,6 @@
     background-color:#8152d6;
     width: 90%;
 }
-
 .section_der{
     display:flex;
     align-items: center;
@@ -76,6 +75,7 @@
     margin-bottom: 2rem;
     font-size: 22px;
 }
+
 /* boton estilo */
 button {
     background: #fff;
@@ -89,12 +89,10 @@ button {
     cursor: pointer;
     transform: skew(-21deg);
   }
-  
   span {
     display: inline-block;
     transform: skew(21deg);
   }
-  
   button::before {
     content: '';
     position: absolute;
@@ -107,11 +105,9 @@ button {
     z-index: -1;
     transition: all 0.5s;
   }
-  
   button:hover {
     color: #fff;
   }
-  
   button:hover::before {
     left: 0;
     right: 0;
@@ -139,6 +135,7 @@ button {
     align-items: center;
     display: flex;
 }
+
 
 /* pagina de auris */
 .sec_principal{
