@@ -1,0 +1,32 @@
+/* footer */
+.header_footer{
+    background-color: black;
+    .header_footer-social{
+        color: #fff;
+        padding: 3rem 1.5rem 2rem;
+        text-align: center;
+        div{
+            margin: auto 0;
+            div{
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                p{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+.footer_copy{
+    background-color: #fff;
+        ul{ 
+            display: inline;
+            text-align: center;
+            padding: 1rem 1.5rem;
+            a{
+                list-style: none;
+                text-decoration: none;
+                color: black;
+            }
+    }
+}

@@ -1,0 +1,82 @@
+/*  pagina de contacto */
+#contact{
+    margin: 10.75rem 0;
+    display: grid;
+    place-content: center;
+}
+#contact .contact_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    gap: 8rem;
+    div{
+        display: flex;
+    }
+}
+.contact_option {
+    width: calc(33.33% - 15px);
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &:last-child{
+        margin-right: 0;
+    }
+        h4{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        a{
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: #fff;
+                color: #333;
+            }
+        }
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+@media screen and (max-width: 992px){
+    // pagina de contactos
+    #contact{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: 10rem;
+    }
+    #contact .contact_container{
+        gap: 2rem;
+    }
+    .contact_options{
+        margin: 13px;
+    }
+}
