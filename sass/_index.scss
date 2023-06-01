@@ -1,3 +1,15 @@
+$color-white: #fff;
+$color-black : black;
+$color-black-shadow: #333;
+$color-violet: #8152d6;
+$rem-0-5: 0.5rem;
+$rem-1: 1rem;
+$rem-1_5: 1.5rem;
+$rem-2: 2rem;
+$rem-3: 3rem;
+$rem-4: 4rem;
+$rem-5: 5rem;
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,7 +22,7 @@
 }
 /* boton estilo */
 button {
-    background: #fff;
+    background: $color-white;
     border: none;
     padding: 10px 20px;
     display: inline-block;
@@ -31,7 +43,7 @@ button {
         bottom: 0;
         right: 100%;
         left: 0;
-        background: #333;
+        background: $color-black-shadow;
         opacity: 0;
         z-index: -1;
         transition: all 0.5s;
@@ -50,18 +62,18 @@ button {
 .categoria_princ{
     h3{
         text-align: center;
-        margin-top: 2rem;
+        margin-top: $rem-2;
         font-size: 50px;
     }
     .categoria_princ_container_catego{
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: $rem-2;
         div{
-            margin: 4rem;
+            margin: $rem-4;
             h4{
                 text-align: center;
-                margin-top: 1rem;
+                margin-top: $rem-1;
                 font-size: 20px;
             }
         }
@@ -75,40 +87,40 @@ button {
     height: 100%;
     display: grid;
     place-content: center;
-    padding: 4rem 0;
+    padding: $rem-4 0;
     .section-container{
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-between;
-        gap: 5rem;
+        gap: $rem-5;
         div{
-            margin-bottom: 3rem;
+            margin-bottom: $rem-3;
         }
     }
     .section_izq-img{
-        background-color:#8152d6;
+        background-color: $color-violet;
         width: 90%;
     }
     .section_der{
         display:flex;
         align-items: center;
         flex-direction: column;
-        padding: 2rem 2rem 2rem 2rem;
+        padding: $rem-2;
         div img{
-            background-color:#8152d6;
+            background-color: $color-violet;
             width: 90%;
         }
     }
     .section_der_text-title{
-        margin-bottom: 0.5rem;
+        margin-bottom: $rem-0-5;
         h3{
             font-size: 39px;
             font-weight: 700;
-            margin: 0 0 1rem;
+            margin: 0 0 $rem-1;
             div{
-                margin-bottom: 2rem;
+                margin-bottom: $rem-2;
                 font-size: 22px;
             }
         }
@@ -118,8 +130,8 @@ button {
 /* porque comprar */
 .container_why{
     margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: $rem-2;
+    padding-bottom: $rem-4;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -128,11 +140,11 @@ button {
         font-size: 20px;
     }
     .container_why-card{
-        margin: 0 1rem;
+        margin: 0 $rem-1;
         align-items: center;
         display: flex;
         img{
-            padding: 0 1rem;
+            padding: 0 $rem-1;
         }
     }
 }

@@ -1,32 +1,44 @@
+$color-white: #fff;
+$color-black : black;
+$color-black-shadow: #333;
+$color-violet: #8152d6;
+$rem-0-5: 0.5rem;
+$rem-1: 1rem;
+$rem-1_5: 1.5rem;
+$rem-2: 2rem;
+$rem-3: 3rem;
+$rem-4: 4rem;
+$rem-5: 5rem;
+
 /* footer */
 .header_footer{
-    background-color: black;
+    background-color: $color-black;
     .header_footer-social{
-        color: #fff;
-        padding: 3rem 1.5rem 2rem;
+        color: $color-white;
+        padding: $rem-3 $rem-1_5 $rem-2;
         text-align: center;
         div{
             margin: auto 0;
             div{
                 font-weight: 500;
-                margin-bottom: 0.5rem;
+                margin-bottom: $rem-0-5;
                 p{
-                    margin-bottom: 1rem;
+                    margin-bottom: $rem-1;
                 }
             }
         }
     }
 }
 .footer_copy{
-    background-color: #fff;
+    background-color: $color-white;
         ul{ 
             display: inline;
             text-align: center;
-            padding: 1rem 1.5rem;
+            padding: $rem-1 $rem-1_5;
             a{
                 list-style: none;
                 text-decoration: none;
-                color: black;
+                color: $color-black;
             }
     }
 }
