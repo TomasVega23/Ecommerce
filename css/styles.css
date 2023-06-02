@@ -1,3 +1,13 @@
+@media only screen and (max-width: 992px) {
+  #carrusel {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #img-seccion {
+    display: none;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

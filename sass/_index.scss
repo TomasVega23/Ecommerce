@@ -9,6 +9,25 @@ $rem-2: 2rem;
 $rem-3: 3rem;
 $rem-4: 4rem;
 $rem-5: 5rem;
+$vista:mobile;
+$vistas:desktop;
+
+
+@if $vista == mobile{
+    @media only screen and (max-width: 992px){
+        #carrusel{
+            display: none;
+        }
+        }
+}
+@if $vistas == desktop{
+    @media only screen and (min-width: 1024px){ 
+    #img-seccion{
+        display: none;
+    }
+    }
+}
+
 
 *{
     font-family: 'Poppins', sans-serif;
