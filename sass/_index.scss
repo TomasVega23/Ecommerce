@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
 $color-white: #fff;
 $color-black : black;
 $color-black-shadow: #333;
@@ -11,6 +12,10 @@ $rem-4: 4rem;
 $rem-5: 5rem;
 $vista:mobile;
 $vistas:desktop;
+$body-first-color : #212121;
+$body-second-color : #191919;
+$text-first-color-card: rgba(0,0,0,0.1);
+
 
 
 @if $vista == mobile{
@@ -30,7 +35,7 @@ $vistas:desktop;
 
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: orbitron;
     margin: 0;
     border: 0;
     outline: 0;
@@ -39,47 +44,10 @@ $vistas:desktop;
     padding: 0;
     box-sizing: border-box;
 }
-/* boton estilo */
-button {
-    background: $color-white;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 600;
-    width: 120px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transform: skew(-21deg);
-    span {
-        display: inline-block;
-        transform: skew(21deg);
-    }
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 100%;
-        left: 0;
-        background: $color-black-shadow;
-        opacity: 0;
-        z-index: -1;
-        transition: all 0.5s;
-    }
-    &:hover {
-        color: #fff;
-    }
-    &:hover::before {
-        left: 0;
-        right: 0;
-        opacity: 1;
-    }
-}
 /* home */
 /* <!-- categorias principales --> */
 .categoria_princ{
-    h3{
+    h1{
         text-align: center;
         margin-top: $rem-2;
         font-size: 50px;
@@ -89,7 +57,7 @@ button {
         justify-content: center;
         margin-bottom: $rem-2;
         div{
-            margin: $rem-4;
+            margin: $rem-1_5;
             h4{
                 text-align: center;
                 margin-top: $rem-1;
@@ -119,24 +87,28 @@ button {
         }
     }
     .section_izq-img{
-        background-color: $color-violet;
+        background: #8E2DE2;  
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+        background: linear-gradient(to right, #4A00E0, #8E2DE2); 
         width: 90%;
     }
     .section_der{
         display:flex;
         align-items: center;
         flex-direction: column;
-        padding: $rem-2;
+        padding: $rem-1_5;
         div img{
-            background-color: $color-violet;
-            width: 90%;
+            background: #8E2DE2;  
+            background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+            background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+            width: 100%;
         }
     }
     .section_der_text-title{
         margin-bottom: $rem-0-5;
-        h3{
+        h2{
             font-size: 39px;
-            font-weight: 700;
+            font-weight:100;
             margin: 0 0 $rem-1;
             div{
                 margin-bottom: $rem-2;
@@ -147,17 +119,22 @@ button {
 }
 
 /* porque comprar */
-.container_why{
-    margin: 0 auto;
-    padding-top: $rem-2;
-    padding-bottom: $rem-4;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    .container_why-titulo{
-        width: 10%;
-        font-size: 20px;
-    }
+#section_porq{
+    background: $color-black;
+    height: 100%;
+        .container_why{
+            margin: 0 auto;
+            padding-top: $rem-3;
+            padding-bottom: $rem-4;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            color: $color-white;
+        .container_why-titulo{
+            width: 10%;
+            font-size: 20px;
+            color: $color-white;
+        }
     .container_why-card{
         margin: 0 $rem-1;
         align-items: center;
@@ -167,6 +144,8 @@ button {
         }
     }
 }
+}
+
 
 @media screen and (max-width: 992px){
     /* index */
@@ -180,11 +159,7 @@ button {
         .categoria_princ_container_catego{
             flex-direction: column;
             justify-content: center;
-            div{
-                display: inline;
-                text-align: center;
-                overflow: hidden;
-            }
+            align-items: center;
         }
     }
     .section_categoria{
@@ -207,11 +182,7 @@ button {
     }
     .container_why{
         flex-direction: column;
-    .container_why-titulo {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }      
+        align-items: center;    
     .container_why-card{
         flex-direction: column;
         p{

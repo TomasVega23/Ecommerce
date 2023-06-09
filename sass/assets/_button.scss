@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+$color-white: #fff;
+$color-black : black;
+$color-black-shadow: #333;
+$color-violet: #8152d6;
+$rem-0-5: 0.5rem;
+$rem-1: 1rem;
+$rem-1_5: 1.5rem;
+$rem-2: 2rem;
+$rem-3: 3rem;
+$rem-4: 4rem;
+$rem-5: 5rem;
+$vista:mobile;
+$vistas:desktop;
+$body-first-color : #212121;
+$body-second-color : #191919;
+$text-first-color-card: rgba(0,0,0,0.1);
+
+
+
+/* boton estilo */
+button {
+    background: $color-white;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    span {
+        display: inline-block;
+        transform: skew(21deg);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        left: 0;
+        background: $color-black-shadow;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    &:hover {
+        color: #fff;
+    }
+    &:hover::before {
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+}

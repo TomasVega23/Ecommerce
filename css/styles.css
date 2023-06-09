@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap");
 @media only screen and (max-width: 992px) {
   #carrusel {
     display: none;
@@ -9,7 +12,7 @@
   }
 }
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: orbitron;
   margin: 0;
   border: 0;
   outline: 0;
@@ -19,47 +22,9 @@
   box-sizing: border-box;
 }
 
-/* boton estilo */
-button {
-  background: #fff;
-  border: none;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  width: 120px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: skew(-21deg);
-}
-button span {
-  display: inline-block;
-  transform: skew(21deg);
-}
-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: #333;
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-button:hover {
-  color: #fff;
-}
-button:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-
 /* home */
 /* <!-- categorias principales --> */
-.categoria_princ h3 {
+.categoria_princ h1 {
   text-align: center;
   margin-top: 2rem;
   font-size: 50px;
@@ -70,7 +35,7 @@ button:hover::before {
   margin-bottom: 2rem;
 }
 .categoria_princ .categoria_princ_container_catego div {
-  margin: 4rem;
+  margin: 1.5rem;
 }
 .categoria_princ .categoria_princ_container_catego div h4 {
   text-align: center;
@@ -98,51 +63,61 @@ button:hover::before {
   margin-bottom: 3rem;
 }
 .section_categoria .section_izq-img {
-  background-color: #8152d6;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
   width: 90%;
 }
 .section_categoria .section_der {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .section_categoria .section_der div img {
-  background-color: #8152d6;
-  width: 90%;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  width: 100%;
 }
 .section_categoria .section_der_text-title {
   margin-bottom: 0.5rem;
 }
-.section_categoria .section_der_text-title h3 {
+.section_categoria .section_der_text-title h2 {
   font-size: 39px;
-  font-weight: 700;
+  font-weight: 100;
   margin: 0 0 1rem;
 }
-.section_categoria .section_der_text-title h3 div {
+.section_categoria .section_der_text-title h2 div {
   margin-bottom: 2rem;
   font-size: 22px;
 }
 
 /* porque comprar */
-.container_why {
+#section_porq {
+  background: black;
+  height: 100%;
+}
+#section_porq .container_why {
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   width: 100%;
+  color: #fff;
 }
-.container_why .container_why-titulo {
+#section_porq .container_why .container_why-titulo {
   width: 10%;
   font-size: 20px;
+  color: #fff;
 }
-.container_why .container_why-card {
+#section_porq .container_why .container_why-card {
   margin: 0 1rem;
   align-items: center;
   display: flex;
 }
-.container_why .container_why-card img {
+#section_porq .container_why .container_why-card img {
   padding: 0 1rem;
 }
 
@@ -159,11 +134,7 @@ button:hover::before {
   .categoria_princ .categoria_princ_container_catego {
     flex-direction: column;
     justify-content: center;
-  }
-  .categoria_princ .categoria_princ_container_catego div {
-    display: inline;
-    text-align: center;
-    overflow: hidden;
+    align-items: center;
   }
   .section_categoria {
     display: flex;
@@ -185,11 +156,7 @@ button:hover::before {
   }
   .container_why {
     flex-direction: column;
-  }
-  .container_why .container_why-titulo {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+    align-items: center;
   }
   .container_why .container_why-card {
     flex-direction: column;
@@ -198,6 +165,14 @@ button:hover::before {
     text-align: center;
   }
 }
+h2 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
 /*  pagina de contacto */
 #contact {
   margin: 10.75rem 0;
@@ -363,6 +338,93 @@ form textarea {
   list-style: none;
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
+}
+
+.card_prin {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card_prin::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #8152d6;
+  transform: skewY(345deg) !important;
+  transition: 0.5s;
+}
+.card_prin:hover::before {
+  top: -60%;
+  transform: skewY(390deg) !important;
+}
+.card_prin::after {
+  content: "TECNO";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6.5em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.card_prin .card-headphone {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+.card_prin .card-headphone img {
+  max-width: 80%;
+  transition: 0.5s;
+}
+.card_prin:hover .card-headphone img {
+  max-width: 70%;
+}
+
+/* boton estilo */
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+button span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #333;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+button:hover {
+  color: #fff;
+}
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
